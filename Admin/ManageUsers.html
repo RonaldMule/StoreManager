@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+      
+    <header>
+            <h1>Admin Dashbord</h1>
+            <nav id="first_nav">
+            <ul>
+            <li> <a href="../login.html"> Login </a></li>
+        </ul>
+        </nav>
+    </header>
+    <section>
+            <nav class="second_nav">
+        <ul>
+            <li> <a href="ManageProducts.html"> Manage Products </a></li>
+            <li> <a href="ManageStock.html">  Manage Stock </a> </li>
+            <li> <a href="ManageUsers.html"> Manage Users </a></li>
+            <li> <a href="ViewSales.html"> View Sales </a></li>
+            
+        </ul>
+        </nav>
+    </section>
+    <article>
+        <form>
+            <label for="Fname">First Name </label>
+            <input type="text" name="Fname" placeholder="First Name"> 
+
+            <label for="Lname">Last Name </label>
+            <input type="text" name="Lname" placeholder="Last Name"> 
+
+            <label for="Username">User Name </label>
+            <input type="text" name="username" placeholder="username"> 
+
+            <label for="password">Password </label>
+            <input type="password" name="password" placeholder="Enter password"> 
+
+            <label for="password">Confirm Password </label>
+            <input type="password" name="password" placeholder="Confirm password"> 
+            <button id="UserSaveButton">Save</button>
+        </form>
+    </article>
+    <section>
+        <table>
+            <thead>
+                <tr> 
+                    <th> #</th>
+                    <th> User Name </th>
+                    <th> Action </th>
+                    <th> Action </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th> 1</th>
+                <td> Ronald Mule </td>
+                <td> <button id="deletebutton"> Delete </button></td>
+                <td> <button id="promotebutton"> Promote User </button></td>
+                </tr>
+                <tr>
+                <th> 2</th>
+                <td> Peter Odoi </td>
+                <td> <button id="deletebutton"> Delete </button></td>
+                <td> <button id="promotebutton"> Promote User </button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer id="footer">
+
+        </footer>
+</div>
+</body>
+</html>

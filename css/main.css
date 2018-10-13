@@ -104,9 +104,11 @@ header a {
     margin:10px;
     padding: 10px;
     margin-left:40px; 
+    
    
     
 }
+
 #product h3{
     text-align: center;
     color: #352f2f;
@@ -197,7 +199,20 @@ table th, td {
     color: #ffffff;
     padding: 17px 40px;
     text-align: center;
-    
+   
+}
+#salebutton {
+    background-color: #42aff8;
+    border: none;
+    color: #ffffff;
+    padding: 17px 40px;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 20%;
+}
+#category{
+    padding: 20px;
+
 }
 #Delete_button{
     background-color: #42f851;
@@ -223,6 +238,11 @@ table th, td {
 }
 li {
     text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+	body {
+        width: 768px;
+    }
 }
 
 

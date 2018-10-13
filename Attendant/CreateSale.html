@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Create  Sell</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
     <script src="main.js"></script>
@@ -15,7 +15,7 @@
     <h1>Shop Attendant Dashbord</h1>
         <nav id="first_nav">
             <ul>
-            <li> <a href="../login.html"> Login </a></li>
+            <li> <a href="../login.html"> Logout </a></li>
         </ul>
         <form>  
             <label for="search"> search Buyer </label>
@@ -36,30 +36,40 @@
         </nav>
     </section>
      <div class="main-content">
-<section>
+<section id="">
         <form>
-                <label for="product_name" > Product Name </label>
-               <input type="text" placeholder="Product Name">
-           
+                <label for="product_name" id="category" > Product Name </label>
+                
+                <select name="productname">
+                     <option>Samusung</option>
+                    <option>iphone</option>
+                    <option>laptop</option> 
+                    <option>Nokia</option> 
+                    <option>Macbook</option> 
+                    </select>
+
+               
+                    <br />
                <label for="quantity_avaliable" > Quantity Avaliable  </label>
                <input type="text" placeholder="quantity avaliable">
-           
-               <label for="category" > Category </label>
+                    <br />
+               <label for="category" id="category" > Category </label>
                <select name="category">
                     <option>Computers</option>
                    <option>Phones</option>
                    <option>Accesories</option> 
            
                </select>
-
+                <br>
                <label for="price" > Price </label>
                <input type="text" placeholder="Price">
-
+                <br />
                <label for="total_price" > Total Price </label>
                <input type="text" placeholder="Total Price">
-           
-               <button id="savebutton"> Add to cart </button>
+               <br>
+               <button id="salebutton"> Add to cart </button>
            </form>
+           
 
 
 </section>

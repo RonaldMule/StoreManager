@@ -23,24 +23,35 @@
       <nav class="second_nav">
         <ul>
             <li> <a href="ManageProducts.html"> Manage Products </a></li>
-            <li> <a href="ManageStock.html">  Manage Stock </a> </li>
+            
             <li> <a href="ManageUsers.html"> Manage Users </a></li>
             <li> <a href="ViewSales.html"> View Sales </a></li>
             
         </ul>
     </nav>
     </section>
-    
-    <section>
+    <div class="main-content">
+    <section id="product">
+            
         <h3> Manage Products </h3>
-         <button id="create_product" name="">Create Product </button>
+        <div id="create_product">
+         <button class="create_button" name="">Create Product
+            <br />     
+        </button>
          <form>
                 <label for="product_name" > Product Name </label>
-               <input type="text" placeholder="Product Name">
-           
-               <label for="quantity_avaliable" > Quantity Avaliable  </label>
-               <input type="text" placeholder="quantity avaliable">
-           
+                
+                <select name="productname">
+                     <option>Samusung</option>
+                    <option>iphone</option>
+                    <option>laptop</option> 
+                    <option>Nokia</option> 
+                    <option>Macbook</option> 
+                    </select>
+                        <br /> 
+               <label for="quantityAvaliable" > Quantity Avaliable  </label>
+               <input type="text" placeholder="quantity avaliable"/>
+                        <br />
                <label for="category" > Category </label>
                <select name="category">
                     <option>Computers</option>
@@ -48,13 +59,14 @@
                    <option>Accesories</option> 
            
                </select>
-
+                <br />
                <label for="price" > Price </label>
                <input type="text" placeholder="Price">
-           
-               <button id="savebutton"> Save </button>
+               <br />
+               <button class="button_1"> Save </button>
            </form>
     </section>
+</div>
     <section>
 
             <table>
@@ -154,7 +166,9 @@
                         </tbody>
             
                    </table>
+                
     </section>
+    </div>
     <footer id="footer">
 
         </footer>

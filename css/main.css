@@ -48,10 +48,13 @@ header a {
 }
 .second_nav {
     width: 250px;
-    height: 400px;
+    height: 490px;
     background: #42aff8;
     margin: o;
     padding: 0;
+    float: left;
+    
+    
 }
 .second_nav ul {
     margin: 0;
@@ -59,14 +62,168 @@ header a {
     text-align: center;
     
 }
+.second_nav li{
+    margin: 20px;
+    text-decoration: none;
+    list-style-type: none;
+}
 .second_nav a{
-    font-size: 35px;
+    font-size: 26px;
    color: #ffffff;
+   
    text-decoration: none;
 }
+.main-content{
+    background: #ffffff;
+    
+    height: 100%;
+    margin: 2px;
+    width: 76%;
+    float: right;
+}
+#create_product{
+    margin: 0;
+    padding: 0;
+
+}
+#create_product{
+    margin-left: 10px;
+    height: 430px;
+    
+}
+#create_product, form {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+}
+#create_product, form, input[type=text]{
+    margin-top: 20px;
+    
+}
+#create_product, form, select {
+    margin:10px;
+    padding: 10px;
+    margin-left:40px; 
+   
+    
+}
+#product h3{
+    text-align: center;
+    color: #352f2f;
+    font-size: 17px;
+}
+
+table {
+    width: 100%;
+    clear: both;
+
+} 
+table th{
+    height: 20px;;
+} 
+table th, td {
+    padding: 8px;
+    text-align: center;
+    background-color: #cfcbcb;
+    color: #352f2f
+
+}
+#loginPage{
+    margin: 0;
+    padding: 0;
+}
+#loginPage{
+    width: 560px;
+    height: 400px;
+    background: #ffffff;
+
+    padding-top:50px;
+    margin-top:  100px;
+    margin-left: 200px;
+    text-align: center;
+    color: #352f2f;
+}
+#lastform, form input[type=password]{
+            margin-top: 20px;
+}
+#loginPage1 h3{
+    text-transform: uppercase;
+    color: #352f2f;
+    font-size: 30px;
+}
+#loginPage1{
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    font-size: 18px;
+    margin-left: 60px;
+    color: #352f2f;
+}
+#user1, #user2{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: #352f2f;
+}
+#user1{
+    padding: 20px;
+    margin-bottom: 10px;
+}
+#user2{
+    padding: 10px;
+}
+#user1, input[type=text]{
+    margin-left: 18px;
+    width: 300px;
+    height: 40px;
+} 
+#user2, input[type=password]{
+    margin-left: 10px;
+    width: 320px;
+    height: 40px;
+} 
+.button_1{
+    background-color: #42aff8;
+    border: none;
+    color: #ffffff;
+    padding: 17px 40px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+#Edit_button{
+    background-color: #42aff8;
+    border: none;
+    color: #ffffff;
+    padding: 17px 40px;
+    text-align: center;
+    
+}
+#Delete_button{
+    background-color: #42f851;
+    border: none;
+    color: #ffffff;
+    padding: 17px 40px;
+    text-align: center;
+}
+
 #footer{
     height: 50px;
-    background: #352f2f
-}  
+    background: #352f2f;
+    clear: both;
+}
+.create_button{
+    background-color: #42aff8;
+    border: none;
+    color: #ffffff;
+    padding: 17px 40px;
+    text-align: center;
+    float: right;
+    margin-right: 20px;
+}
+li {
+    text-decoration: none;
+}
+
 
 

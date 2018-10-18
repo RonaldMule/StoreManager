@@ -28,9 +28,9 @@ def get_Allproduct():
     return jsonify({'product': products})
 
 #geting a single product
-@app.route('/api/v1.0/products/<productId>', methods = ['GET'])
+@app.route('/api/v1.0/products/<int:productId>', methods = ['GET'])
 def get_product(productId):
-  product = [product_item for product_item in products if product_item['productId'] == id]
+  product = [product_item for product_item in products if product_item['id'] == productId ]
   return jsonify({'product_item': product[0]}) 
 
 

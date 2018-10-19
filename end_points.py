@@ -23,6 +23,28 @@ products = [
     
 ]
 
+sales = [
+    {
+        'id':1,
+        'Name': 'phones',
+        'category': 'computer',
+        'price': '30000',
+        'Sold By': 'Ronald Mulyowa',
+        'done': False
+    },
+    {
+         
+        'id':2,
+        'Name': 'phones',
+        'category': 'computer',
+        'price': '30000',
+        'Sold By': 'Ronald Mulyowa',
+        'done': False
+    
+    }
+    
+]
+
 @app.route('/api/v1.0/products', methods = ['GET'])
 def get_Allproduct():
     return jsonify({'product': products})
@@ -46,6 +68,13 @@ def create_product():
     }  
     products.append(product) 
     return jsonify({'product': product}), 201 
+
+
+@app.route('/api/v1.0/sales', methods = ['GET'])
+""" fetch all sales records """
+def get_sells():
+    return jsonify({'sales': sales})
+
 
 
 

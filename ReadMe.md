@@ -1,15 +1,18 @@
  #API endpoints
+ [![Build Status](https://travis-ci.org/RonaldMule/StoreManager.io.svg?branch=master)](https://travis-ci.org/RonaldMule/StoreManager.io)
 
-~~~
  ##Required Features
+~~~
+
     1. Store attendant can search and add products to buyer’s cart.
     2. Store attendant can see his/her sale records but can’t modify them.
     3. App should show available products, quantity and price.
     4. Store owner can see sales and can filter by attendants.
     5. Store owner can add, modify and delete products.
 ~~~ 
-~~~   
 ##Tools
+~~~   
+
     • Server-Side Framework: <Flask Python Framework>
     • Linting Library: <Pylint, a Python Linting Library>
         • Style Guide: <PEP8 Style Guide>

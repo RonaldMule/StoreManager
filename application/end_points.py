@@ -45,15 +45,18 @@ sales = [
     
 ]
 
-@app.route('/api/v1.0/products', methods = ['GET'])
+@app.route('/api/v1/products', methods = ['GET'])
 def get_Allproduct():
-    return jsonify({'product': products})
+    try:
+        return jsonify({'product': products}), 201
+    except KeyError:
+        print("sorry the figure entered is not indexed")     
 
 @app.route('/api/v1/products/<int:productId>', methods = ['GET'])
-""" geting a single product """
+#""" [geting a single product] """
 def get_product(productId):
-  product = [product_item for product_item in products if product_item['id'] == productId ]
-  return jsonify({'product_item': product[0]}) 
+    product = [product_item for product_item in products if product_item['id'] == productId ]
+    return jsonify({'product_item': product[0]}), 201 
 
 @app.route('/api/v1/products', methods = ['POST'])
 def create_product():
@@ -70,28 +73,28 @@ def create_product():
     return jsonify({'product': product}), 201 
 
 
-@app.route('/api/v1.0/sales', methods = ['GET'])
-""" fetch all sales records """
-def get_sells():
+@app.route('/api/v1/sales', methods = ['GET'])
+#""" fetch all sales records """
+def get_sales():
     return jsonify({'sales': sales})
 
 
-@app.route('/api/v1.0/sales/<int:saleId>', methods = ['GET'])
-""" fetch a single sale record  """
-
-def get_task(task_id):
-    sale = [sold_item for sold_item in sales if sold_item['sellId'] == id]
+@app.route('/api/v1/sales/<int:saleId>', methods = ['GET'])
+#""" fetch a single sale record  """
+def get_a_sale(saleId):
+    sale = [sold_item for sold_item in sales if sold_item['id'] == saleId]
     return jsonify({'product_item': sale[0]})
 
-#Creating a sale order
-@app.route('/api/v1.0/sales', methods = ['POST'])
+
+@app.route('/api/v1/sales', methods = ['POST'])
+#"""Creating a sale order"""
 def create_sale():
     cart = {
             'id': sales[-1]['id'] +1,
             'name': request.json['name'],
             'category':request.json['category'],
             'price': request.json['price'],
-            'sold by': request.json['sold by'], 
+            'sold_by': request.json['sold_by'], 
             'done': False
     }  
     sales.append(cart) 

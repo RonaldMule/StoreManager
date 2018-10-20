@@ -1,16 +1,20 @@
- API endpoints
+ #API endpoints
 
- Required Features
+~~~
+ ##Required Features
     1. Store attendant can search and add products to buyer’s cart.
     2. Store attendant can see his/her sale records but can’t modify them.
     3. App should show available products, quantity and price.
     4. Store owner can see sales and can filter by attendants.
     5. Store owner can add, modify and delete products.
-Tools
+~~~ 
+~~~   
+##Tools
     • Server-Side Framework: <Flask Python Framework>
     • Linting Library: <Pylint, a Python Linting Library>
         • Style Guide: <PEP8 Style Guide>
     • Testing Framework: <PyTest, a Python Testing Framework>
+ ~~~   
 EndPoint
 Functionality
 Notes

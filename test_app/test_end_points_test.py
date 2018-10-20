@@ -9,10 +9,11 @@ import pytest
 def client():
     test_client = app.test_client()
     return test_client
-
+"""
 def startUp(self):
     self.client = app.test_client()
     return test_client
+    """
 class  TestClass:   
     def test_get_Allproduct(self, client):
         response = client.get('/api/v1/products')

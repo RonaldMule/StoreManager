@@ -1,2 +1,6 @@
 .vscode
 .idea
+*.pyc
+*.pyo
+__pycache__/
+*.py[cod]

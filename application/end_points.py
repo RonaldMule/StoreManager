@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request, abort
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
@@ -6,19 +6,19 @@ products = [
     {
         'id':1,
        
-        'name': u'phones, computers',
-        'quantity avaliable': u'122 boxes',
-        'category': u'computer',
-        'price': u'2000',
-        'done': False
+        'name': 'phones, computers',
+        'quantity avaliable': '122 boxes',
+        'category': 'computer',
+        'price': 2000
+      
     },
     {
       'id':1,
-      'name': u'phones, computers',
-      'quantity avaliable': u'122 boxes',
-      'category': u'computer',
-      'price': u'12000, 30000,182900',
-      'done': False  
+      'name': 'phones, computers',
+      'quantity_avaliable': '122 boxes',
+      'category': 'computer',
+      'price': 12000
+     
     }
     
 ]
@@ -28,18 +28,18 @@ sales = [
         'id':1,
         'Name': 'phones',
         'category': 'computer',
-        'price': '30000',
-        'Sold By': 'Ronald Mulyowa',
-        'done': False
+        'price': 30000,
+        'Sold By': 'Ronald Mulyowa'
+        
     },
     {
          
         'id':2,
         'Name': 'phones',
         'category': 'computer',
-        'price': '30000',
-        'Sold By': 'Ronald Mulyowa',
-        'done': False
+        'price': 30000,
+        'Sold By': 'Ronald Mulyowa'
+       
     
     }
     
@@ -47,10 +47,8 @@ sales = [
 
 @app.route('/api/v1/products', methods = ['GET'])
 def get_Allproduct():
-    try:
-        return jsonify({'product': products}), 201
-    except KeyError:
-        print("sorry the figure entered is not indexed")     
+    return jsonify({'product': products}), 201
+       
 
 @app.route('/api/v1/products/<int:productId>', methods = ['GET'])
 #""" [geting a single product] """
@@ -66,8 +64,8 @@ def create_product():
             'name': request.json['name'],
             'quantity_avaliable':request.json['quantity_avaliable'],
             'category':request.json['category'],
-            'price': request.json['price'],
-            'done': False
+            'price': request.json['price']
+          
     }  
     products.append(product) 
     return jsonify({'product': product}), 201 
@@ -94,8 +92,8 @@ def create_sale():
             'name': request.json['name'],
             'category':request.json['category'],
             'price': request.json['price'],
-            'sold_by': request.json['sold_by'], 
-            'done': False
+            'sold_by': request.json['sold_by']
+          
     }  
     sales.append(cart) 
     return jsonify({'cart': cart}), 201 

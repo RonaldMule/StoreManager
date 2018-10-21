@@ -27,8 +27,7 @@
 |GET /products                | Fetch all products              |Get all available products.|
 |GET /products/<productId>    |Fetch a single product record    | Get a specific product using the product’s id.|
 |GET /sales                   |Fetch all sale records           |Get all sale records. This endpoint should be accessible to only the store owner/admin.|
-|GET /sales/<saleId>          | Fetch a single sale record      | Get a specific sale record using the                                                          
-
+|GET /sales/<saleId>          | Fetch a single sale record      | Get a specific sale record using the  
 |      POST/PODUCTS           | Create a product                | Create a new product record.This point should be accessible to only the store owner/admin | 
  POST /sales                 | Create a sale order         | Create a sale record. This endpoint is accessible to only the store attendant.|
 
